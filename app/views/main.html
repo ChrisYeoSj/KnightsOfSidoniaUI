@@ -2,28 +2,32 @@
     <label>イ</label>
     <label>005</label>
 </div>
-<div class="BorderDesignsTopBottom"></div>
-<div class="PilotCard">
-    <div class="PilotPortraitArea">
-        <div class='warningContainer' id='warning'>
-            <div class='warningMessage'>
-               緊急要請 
+<div class="ScreenBorder">
+    <div class="BorderDesignsTopBottom"></div>
+    <div class="BorderDesignsLeft"></div>
+    <div class="PilotCard">
+        <div class="PilotPortraitArea">
+            <div class='warningContainer' id='warning'>
+                <div class='warningMessage'>
+                    緊急要請
+                </div>
+                <img src='../images/EmergencyRequest.png' />
             </div>
-            <img src='../images/EmergencyRequest.png' />
+            <img class="PilotPortrait" src='../images/samara-knights-of-sidonia.png' />
         </div>
-        <img class="PilotPortrait" src='../images/samara-knights-of-sidonia.png' />
+        <audio id="audioSong" src="../audio/crowSong.mp3"></audio>
+        <div class="PilotAudioStatus" id="r2" style="bottom:0px">
+            <div class="MicrophoneStatus">
+                <img class="notspeaking" id="micStatus" src="../images/sidoniaSpeak.png" />
+            </div>
+            <div class="volumeBarArea" style="float:left">
+                <div id="volumeBars"></div>
+            </div>
+            <div class="CallSignArea" style="float:left">
+                <label class="CallSignText">005</label>
+            </div>
+        </div>
     </div>
-    <audio id="audioSong" src="../audio/crowSong.mp3"></audio>
-    <div class="PilotAudioStatus" id="r2" style="bottom:0px">
-        <div class="MicrophoneStatus">
-            <img class="notspeaking" id="micStatus" src="../images/sidoniaSpeak.png" />
-        </div>
-        <div class="volumeBarArea" style="float:left">
-            <div id="volumeBars"></div>
-        </div>
-        <div class="CallSignArea" style="float:left">
-            <label class="CallSignText">005</label>
-        </div>
-    </div>
+    <div class="BorderDesignsRight"></div>
+    <div class="BorderDesignsTopBottom"></div>
 </div>
-<div class="BorderDesignsTopBottom"></div>

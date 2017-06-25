@@ -234,6 +234,7 @@ h1 {
     border-width: 3px;
     border-color: #5FDCCD;
     width: 456px;
+    display: inline-block;
 }
 
 .PilotAudioStatus{
@@ -241,19 +242,31 @@ h1 {
     height:100px;
 }
 
-.BorderDesignsSides{
-    border-top:1px solid #5FDCCD;
-    border-bottom: 1px solid #5FDCCD;
-    height: 613px;
+.BorderDesignsLeft{
+    display: inline-block;
+    border-top:2px solid #5FDCCD;
+    border-bottom: 2px solid #5FDCCD;
+    height: 615px;
     width: 5px;
     float: left;
 }
 
+.BorderDesignsRight{
+    display: inline;
+    border-top:2px solid #5FDCCD;
+    border-bottom: 2px solid #5FDCCD;
+    height: 615px;
+    width: 5px;
+    float: right;
+}
+
 .BorderDesignsTopBottom{
+    margin-left: 5px;
     border-left: 2px solid #5FDCCD;
     border-right: 2px solid #5FDCCD;
     height: 5px;
     width: 456px;
+    position: relative;
 }
 
 .warningContainer {
@@ -275,7 +288,10 @@ h1 {
     width: 400px;
     color: yellow;
     font-size: 60px;
+}
 
+.ScreenBorder{
+    width:466px;
 }
 
 @font-face {
