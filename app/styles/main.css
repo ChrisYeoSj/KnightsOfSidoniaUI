@@ -265,6 +265,19 @@ h1 {
     position: absolute;
 }
 
+.warningMessage {
+    position: absolute;
+    z-index: 10002;
+    text-align: center;
+    background-color: black;
+    margin:20px;
+    line-height: 80px;
+    width: 400px;
+    color: yellow;
+    font-size: 60px;
+
+}
+
 @font-face {
     font-family: 'Coburn';
     src: url('../fonts/Coburn.eot');
