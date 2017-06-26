@@ -5,7 +5,7 @@
         <div class="PilotPortraitArea">
             <div class='warningContainer' id='warning'>
                 <div class='warningMessage'>
-                    緊急要請
+                    {{warningMessage}}
                 </div>
                 <img src='../images/EmergencyRequest.png' />
             </div>
@@ -23,13 +23,10 @@
                 <div id="volumeBars"></div>
             </div>
             <div class="CallSignArea" style="float:left">
-                <label class="CallSignText">005</label>
+                <label class="CallSignText">{{callsign}}</label>
             </div>
         </div>
     </div>
     <div class="BorderDesignsRight"></div>
     <div class="BorderDesignsTopBottom"></div>
 </div>
-
-
-<!-- <pilot callsign="005" warning-message="緊急要請"></pilot> -->

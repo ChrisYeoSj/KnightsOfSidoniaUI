@@ -208,8 +208,10 @@ h1 {
 }
 
 .CallSignText {
-    font-size: 85px;
-    font-family: 'Coburn';
+    padding-top: 5px;
+    padding-left: 10px;
+    font-size: 80px;
+    font-family: 'Halenstb';
     line-height: 95px;
     width: 150px;
     text-align: center;
@@ -221,12 +223,14 @@ h1 {
     border-color: #5FDCCD;
     padding: 2px;
     width: 440px;
+    
 }
 
 .PilotPortraitArea{
     width: 450px;
     padding: 5px;
     background-color: #151515 ;
+    position: relative;
 }
 
 .PilotCard{
@@ -246,7 +250,7 @@ h1 {
     display: inline-block;
     border-top:2px solid #5FDCCD;
     border-bottom: 2px solid #5FDCCD;
-    height: 615px;
+    height: 616px;
     width: 5px;
     float: left;
 }
@@ -255,7 +259,7 @@ h1 {
     display: inline;
     border-top:2px solid #5FDCCD;
     border-bottom: 2px solid #5FDCCD;
-    height: 615px;
+    height: 616px;
     width: 5px;
     float: right;
 }
@@ -294,13 +298,33 @@ h1 {
     width:466px;
 }
 
+.PilotNameArea{
+    border-top: solid 3px #5FDCCD;
+    border-left: solid 3px #5FDCCD;
+    font-size: 150px;
+    line-height: 150px;
+    width: 150px;
+    z-index: 5;
+    text-align: center;
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.PilotName{
+    opacity: 1;
+    color:white;
+}
+
 @font-face {
-    font-family: 'Coburn';
-    src: url('../fonts/Coburn.eot');
+    font-family: 'Halenstb';
+    src: url('../fonts/Halenstb.eot');
     /* IE9 Compat Modes */
-    src: url('../fonts/Coburn.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/Coburn.woff') format('woff'), /* Pretty Modern Browsers */
-    url('../fonts/Coburn.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('../fonts/Coburn.svg#Coburn') format('svg');
+    src: url('../fonts/Halenstb.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/Halenstb.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/Halenstb.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/Halenstb.svg#Halenstb') format('svg');
     /* Legacy iOS */
 }
+
