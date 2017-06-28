@@ -1,7 +1,7 @@
 <div class="ScreenBorder">
     <div class="BorderDesignsTopBottom"></div>
     <div class="BorderDesignsLeft"></div>
-    <div class="PilotCard">
+    <div class="PilotCard" ng-click="main.togglePlay()">
         <div class="PilotPortraitArea">
             <div class='warningContainer' id='warning'>
                 <div class='warningMessage'>
@@ -14,7 +14,7 @@
             </div>
             <img class="PilotPortrait" src='../images/samara-knights-of-sidonia.png' />
         </div>
-        <audio id="audioSong" src="../audio/crowSong.mp3"></audio>
+        <audio id="audioSong" src="audio/crowSong.mp3"></audio>
         <div class="PilotAudioStatus" id="r2" style="bottom:0px">
             <div class="MicrophoneStatus">
                 <img class="notspeaking" id="micStatus" src="../images/sidoniaSpeak.png" />
@@ -32,4 +32,5 @@
 </div>
 
 
-<!-- <pilot callsign="005" warning-message="緊急要請"></pilot> -->
+<pilot callsign="005" warning-message="緊急要請" audio-src="audio/crowSong.mp3" pilot-name='イ' pilot-image='images/samara-knights-of-sidonia.png'></pilot>
+<pilot callsign="006" warning-message="緊急要請" audio-src="audio/crowSong.mp3" pilot-name='イ' pilot-image='images/samara-knights-of-sidonia.png'></pilot>

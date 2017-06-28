@@ -79,7 +79,7 @@ body {
 
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 730px;
+        max-width: 100%;
     }
     /* Remove the padding we set earlier */
     .header,
@@ -173,6 +173,18 @@ h1 {
     border-left: solid 1px #5FDCCD;
 }
 
+
+.SquadVolumeBarArea {
+    position: relative;
+    width: 100px;
+    height: 70px;
+    background: rgba(10, 24, 24, 1);
+    border-right: solid 3px black;
+    border-top: solid 3px black;
+    border-bottom: solid 3px black;
+    display: inline-block;
+}
+
 .volBar {
     position: absolute;
     background: #0a2a2d;
@@ -198,6 +210,17 @@ h1 {
     float:left;
     padding: 5px;
     background-color: black;
+}
+
+
+.SquadMicrophoneStatus{
+    width:100px;
+    height: 70px;
+    float:left;
+    background-color: black;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
 }
 
 .CallSignArea {
@@ -239,11 +262,20 @@ h1 {
     border-color: #5FDCCD;
     width: 456px;
     display: inline-block;
+    cursor: pointer;
 }
 
 .PilotAudioStatus{
     border-top: 3px solid #5FDCCD;
     height:100px;
+}
+
+.SquadPilotAudioStatus{
+    height:70px;
+    bottom:0px;
+    position:absolute;
+    left:0px;
+    border: 2px solid #5FDCCD;
 }
 
 .BorderDesignsLeft{
@@ -294,6 +326,27 @@ h1 {
     font-size: 60px;
 }
 
+.SquadWarningContainer {
+    overflow: hidden;
+    width: 300px;
+    height: 80px;
+    background-color: yellow;
+    z-index: 10001;
+    position: absolute;
+}
+
+.SquadWarningMessage {
+    position: absolute;
+    z-index: 10002;
+    text-align: center;
+    background-color: black;
+    margin: 10px;
+    line-height: 60px;
+    width: 280px;
+    color: yellow;
+    font-size: 40px;
+}
+
 .ScreenBorder{
     width:466px;
 }
@@ -316,6 +369,28 @@ h1 {
     opacity: 1;
     color:white;
 }
+
+.PilotPortraitSquareArea {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    background-color: #151515 ;
+    position:relative;
+}
+
+.PilotPortraitSquare{
+    height: auto;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.RequestBackground{
+    width: 300px;
+    height: 80px;
+}
+
+
 
 @font-face {
     font-family: 'Halenstb';

@@ -1,26 +1,25 @@
 <div class="ScreenBorder">
     <div class="BorderDesignsTopBottom"></div>
     <div class="BorderDesignsLeft"></div>
-    <div class="PilotCard">
+    <div class="PilotCard" ng-click="togglePlay()">
         <div class="PilotPortraitArea">
-            <div class='warningContainer' id='warning'>
+            <div class='warningContainer' id='warningDirective'>
                 <div class='warningMessage'>
                     {{warningMessage}}
                 </div>
                 <img src='../images/EmergencyRequest.png' />
             </div>
             <div class="PilotNameArea">
-                <div class="PilotName">イ</div>
+                <div class="PilotName">{{pilotName}}</div>
             </div>
-            <img class="PilotPortrait" src='../images/samara-knights-of-sidonia.png' />
+            <img class="PilotPortrait" src="{{pilotImage}}" />
         </div>
-        <audio id="audioSong" src="../audio/crowSong.mp3"></audio>
         <div class="PilotAudioStatus" id="r2" style="bottom:0px">
             <div class="MicrophoneStatus">
-                <img class="notspeaking" id="micStatus" src="../images/sidoniaSpeak.png" />
+                <img class="notspeaking" id="micStatusDirective" src="../images/sidoniaSpeak.png" />
             </div>
             <div class="volumeBarArea" style="float:left">
-                <div id="volumeBars"></div>
+                <div id="volumeBarsDirective"></div>
             </div>
             <div class="CallSignArea" style="float:left">
                 <label class="CallSignText">{{callsign}}</label>

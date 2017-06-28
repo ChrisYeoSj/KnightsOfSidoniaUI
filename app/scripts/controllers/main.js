@@ -18,7 +18,24 @@ angular.module('kosApp')
 
         window.AudioContext = window.AudioContext || window.webkitAudioContext || window.mozAudioContext;
 
-        this.init = function() {
+        this.togglePlay = function() {
+
+            var isPlaying = this.audio.currentTime > 0 && !this.audio.paused && !this.audio.ended && this.audio.readyState > 2;
+            console.log('isPlaying', isPlaying);
+            console.log('currentTime', this.audio.currentTime);
+            console.log('this.audio.paused', this.audio.paused);
+            console.log('this.audio.ended', this.audio.ended);
+            console.log('this.audio.readyState', this.audio.readyState);
+
+            if (!isPlaying){
+                this.audio.play();
+            } else {
+                this.audio.pause();
+            }
+            
+        }
+
+        this.init = angular.bind(this, function() {
 
             var barsArr = [],
                 rightBarsArr = [],
@@ -30,8 +47,8 @@ angular.module('kosApp')
             var micSpeakElement;
 
             var ctx = new AudioContext();
-            var audio = document.getElementById('audioSong');
-            var audioSrc = ctx.createMediaElementSource(audio);
+            this.audio = document.getElementById('audioSong');
+            var audioSrc = ctx.createMediaElementSource(this.audio);
             var analyser = ctx.createAnalyser();
             // we have to connect the MediaElementSource with the analyser 
             audioSrc.connect(analyser);
@@ -52,8 +69,8 @@ angular.module('kosApp')
 
                 micSpeakElement = document.getElementById('micStatus');
 
-                micSpeakElement.width = volWidth - (padding*2);
-                micSpeakElement.height = volHeight - (padding*2);
+                micSpeakElement.width = volWidth - (padding * 2);
+                micSpeakElement.height = volHeight - (padding * 2);
 
                 volumeBarsElement = document.getElementById('volumeBars');
 
@@ -79,7 +96,7 @@ angular.module('kosApp')
                 }
             };
 
-            audio.play();
+
             init();
 
             function renderFrame() {
@@ -200,6 +217,6 @@ angular.module('kosApp')
             }
 
             renderFrame();
-        };
+        });
 
     });
