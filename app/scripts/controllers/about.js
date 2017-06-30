@@ -19,15 +19,16 @@ angular.module('kosApp')
 
         this.togglePlay = function() {
 
-            var isPlaying = this.audio.currentTime > 0 && !this.audio.paused && !this.audio.ended && this.audio.readyState > 2;
+                var isPlaying = this.audio.currentTime > 0 && !this.audio.paused && !this.audio.ended && this.audio.readyState > 2;
 
-            if (!isPlaying) {
-                this.audio.play();
-            } else {
-                this.audio.pause();
+                if (!isPlaying) {
+                    this.audio.play();
+                } else {
+                    this.audio.pause();
+                }
+
             }
-
-        }
+            //
 
         this.init = angular.bind(this, function() {
 
@@ -50,6 +51,65 @@ angular.module('kosApp')
             audioSrc.connect(ctx.destination);
             // frequencyBinCount tells you how many values you'll receive from the analyser
             var frequencyData = new Uint8Array(analyser.frequencyBinCount);
+
+
+            var canvas = document.getElementById("HeartMonitorCanvas");
+            var canvasBrain = document.getElementById("BrainWaveMonitorCanvas");
+            var canvasStress = document.getElementById("StressMonitorCanvas");
+
+            console.log(canvas);
+            var ctx = canvas.getContext("2d");
+            var ctxB = canvasBrain.getContext("2d");
+            var ctxS = canvasStress.getContext("2d");
+
+            ctxS.fillStyle= "#5FDCCD";
+            ctxB.fillStyle = "#5FDCCD";
+            ctx.fillStyle="#5FDCCD";
+            // capture incoming socket data in an array
+            var data = [];
+
+            // TESTING: fill data with some test values
+            for (var i = 0; i < 10000; i++) {
+                data.push(Math.sin(i / 8) * 70 + 75);
+            }
+
+
+            var x = 0;
+            var panAtX = 300;
+            var continueAnimation = true;
+            
+            var animate = function() {
+
+                if (x > data.length - 1) {
+                    return;
+                }
+
+                if (continueAnimation) {
+                    requestAnimationFrame(animate);
+                }
+
+                if (x++ < panAtX) {
+
+                    ctx.fillRect(x, data[x], 3, 3);
+                    ctxB.fillRect(x, data[x], 3, 3);
+                    ctxS.fillRect(x, data[x], 3, 3);
+
+
+                } else {
+
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    ctxB.clearRect(0, 0, canvasBrain.width, canvasBrain.height);
+                    ctxS.clearRect(0,0, canvasStress.width, canvasStress.height);
+                    // plot data[] from x-PanAtX to x 
+
+                    for (var xx = 0; xx < panAtX; xx++) {
+                        var y = data[x - panAtX + xx];
+                        ctx.fillRect(xx, y, 3, 3);
+                        ctxB.fillRect(xx, y, 3, 3);
+                        ctxS.fillRect(xx, y, 3,3);
+                    }
+                }
+            };
 
 
             var init = function() {
@@ -90,7 +150,7 @@ angular.module('kosApp')
                 }
             };
 
-
+            animate();
             init();
 
             function renderFrame() {
@@ -212,6 +272,7 @@ angular.module('kosApp')
 
             renderFrame();
         });
+
 
 
     });

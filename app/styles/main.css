@@ -223,6 +223,11 @@ h1 {
     border-color: black;
 }
 
+.MicroPhoneImg{
+    width:100px;
+    height:70px;
+}
+
 .CallSignArea {
     position: relative;
     background: #5FDCCD;
@@ -271,7 +276,8 @@ h1 {
 }
 
 .SquadPilotAudioStatus{
-    height:70px;
+
+    height:74px;
     bottom:0px;
     position:absolute;
     left:0px;
@@ -370,12 +376,20 @@ h1 {
     color:white;
 }
 
+.Pilot{
+    z-index: -1;
+    padding-left: 4px;
+    background-color: black;
+}
+
 .PilotPortraitSquareArea {
     width: 300px;
     height: 300px;
     overflow: hidden;
     background-color: #151515 ;
     position:relative;
+    border: solid 2px #5FDCCD;
+    cursor: pointer;
 }
 
 .PilotPortraitSquare{
@@ -387,10 +401,90 @@ h1 {
 
 .RequestBackground{
     width: 300px;
-    height: 80px;
+}
+
+.SquadPilotName{
+    width:100px;
+    padding-top: 5px;
+    line-height:90px;
+    background-color: black;
+    font-size: 100px;
+    text-align: center;
+    color: white;
+    float: left;
+    display: inline-block;
 }
 
 
+.SquadCallSign{
+    width:196px;
+    line-height: 90px;
+    padding-top: 5px;
+    background-color: #5FDCCD;
+    text-align: right;
+    display: inline-block;
+    font-size: 90px;
+    font-family: 'Halenstb';
+    color: black;
+}
+
+.SquadPilotTitle{
+    border: solid 2px #5FDCCD;
+    width: 300px;
+    height: 98px;
+    margin-left: 4px;
+}
+
+.HeartMonitorName, .BrainWaveMonitorName, .StressMonitorName, .TemperatureMonitorName{
+    width:100px;
+    line-height: 96px;
+    text-align: center;
+    font-size: 90px;
+    font-family: 'Halenstb';
+    color:#5FDCCD;
+    display: inline-block;
+    float: left;
+    border-right: 1px solid #2b2b2b
+}
+
+
+
+.HeartMonitorChart, .BrainWaveMonitorChart, .StressMonitorChart, .TemperatureMonitorChart{
+    height: 95px;
+    width: 200px;
+    background-color: black;
+}
+
+.HeartMonitor, .BrainWaveMonitor, .StressMonitor, .TemperatureMonitor{
+    height:100px;
+    width: 304px;
+    border: 2px solid #2b2b2b;
+}
+
+.BrainWaveMonitor, .StressMonitor, .TemperatureMonitor{
+    border-top: 0px;
+}
+
+.MonitorBoard{
+    display: inline-block;
+    position: absolute;
+}
+
+.PilotBoard{
+    display: inline-block;
+    border-bottom: 2px solid black;
+}
+
+.TemperatureMonitorChart{
+    line-height: 90px;
+    padding-top: 5px;
+    background-color: black;
+    text-align: right;
+    display: inline-block;
+    font-size: 90px;
+    font-family: 'Halenstb';
+    color: #5FDCCD;
+}
 
 @font-face {
     font-family: 'Halenstb';
