@@ -21,11 +21,6 @@ angular.module('kosApp')
         this.togglePlay = function() {
 
             var isPlaying = this.audio.currentTime > 0 && !this.audio.paused && !this.audio.ended && this.audio.readyState > 2;
-            console.log('isPlaying', isPlaying);
-            console.log('currentTime', this.audio.currentTime);
-            console.log('this.audio.paused', this.audio.paused);
-            console.log('this.audio.ended', this.audio.ended);
-            console.log('this.audio.readyState', this.audio.readyState);
 
             if (!isPlaying){
                 this.audio.play();

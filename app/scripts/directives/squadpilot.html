@@ -1,0 +1,44 @@
+<div class="SinglePilotDashboard">
+    <div class="PilotBoard" ng-click='togglePlay()'>
+        <div class="SquadPilotTitle">
+            <div class='SquadPilotName'>{{pilotName}}</div>
+            <div class="SquadCallSign">{{callsign}}</div>
+        </div>
+        <div class="Pilot">
+            <div class="PilotPortraitSquareArea">
+                <img class="PilotPortraitSquare" src='../images/samara-knights-of-sidonia-square.png' />
+                <div class='SquadWarningContainer' id='warning'>
+                    <div class='SquadWarningMessage'>{{warningMessage}}</div>
+                    <img class='RequestBackground' src='../images/EmergencyRequest.png' />
+                </div>
+                <div class="SquadPilotAudioStatus">
+                    <div class="SquadMicrophoneStatus">
+                        <img class="notspeaking;MicroPhoneImg" id="micStatus" src="../images/sidoniaSpeak.png" />
+                    </div>
+                    <div class="SquadVolumeBarArea">
+                        <div id="volumeBars"></div>
+                    </div>
+                </div>
+                <audio src="{{audioSrc}}"></audio>
+            </div>
+        </div>
+    </div>
+    <div class="MonitorBoard">
+        <div class="HeartMonitor">
+            <div class='HeartMonitorName'>心</div>
+            <canvas id='HeartMonitorCanvas' class='HeartMonitorChart'></canvas>
+        </div>
+        <div class="StressMonitor">
+            <div class='StressMonitorName'>圧</div>
+            <canvas id='StressMonitorCanvas' class='StressMonitorChart'></canvas>
+        </div>
+        <div class="TemperatureMonitor">
+            <div class='TemperatureMonitorName'>温</div>
+            <div class='TemperatureMonitorChart'>{{temperature}}</div>
+        </div>
+        <div class="BrainWaveMonitor">
+            <div class='BrainWaveMonitorName'>脳</div>
+            <canvas id='BrainWaveMonitorCanvas' class='BrainWaveMonitorChart'></canvas>
+        </div>
+    </div>
+</div>

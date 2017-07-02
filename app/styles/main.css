@@ -173,7 +173,6 @@ h1 {
     border-left: solid 1px #5FDCCD;
 }
 
-
 .SquadVolumeBarArea {
     position: relative;
     width: 100px;
@@ -207,25 +206,24 @@ h1 {
 }
 
 .MicrophoneStatus {
-    float:left;
+    float: left;
     padding: 5px;
     background-color: black;
 }
 
-
-.SquadMicrophoneStatus{
-    width:100px;
+.SquadMicrophoneStatus {
+    width: 100px;
     height: 70px;
-    float:left;
+    float: left;
     background-color: black;
     border-style: solid;
-    border-width: 3px;
+    border-width: 3.33px;
     border-color: black;
 }
 
-.MicroPhoneImg{
-    width:100px;
-    height:70px;
+.MicroPhoneImg {
+    width: 100px;
+    height: 70px;
 }
 
 .CallSignArea {
@@ -251,17 +249,16 @@ h1 {
     border-color: #5FDCCD;
     padding: 2px;
     width: 440px;
-    
 }
 
-.PilotPortraitArea{
+.PilotPortraitArea {
     width: 450px;
     padding: 5px;
-    background-color: #151515 ;
+    background-color: #151515;
     position: relative;
 }
 
-.PilotCard{
+.PilotCard {
     border-style: solid;
     border-width: 3px;
     border-color: #5FDCCD;
@@ -270,39 +267,39 @@ h1 {
     cursor: pointer;
 }
 
-.PilotAudioStatus{
+.PilotAudioStatus {
     border-top: 3px solid #5FDCCD;
-    height:100px;
+    height: 100px;
 }
 
-.SquadPilotAudioStatus{
-
-    height:74px;
-    bottom:0px;
-    position:absolute;
-    left:0px;
+.SquadPilotAudioStatus {
+    height: 72px;
+    bottom: 0px;
+    position: absolute;
+    left: 0px;
     border: 2px solid #5FDCCD;
+    border-bottom: 0px;
 }
 
-.BorderDesignsLeft{
+.BorderDesignsLeft {
     display: inline-block;
-    border-top:2px solid #5FDCCD;
+    border-top: 2px solid #5FDCCD;
     border-bottom: 2px solid #5FDCCD;
     height: 616px;
     width: 5px;
     float: left;
 }
 
-.BorderDesignsRight{
+.BorderDesignsRight {
     display: inline;
-    border-top:2px solid #5FDCCD;
+    border-top: 2px solid #5FDCCD;
     border-bottom: 2px solid #5FDCCD;
     height: 616px;
     width: 5px;
     float: right;
 }
 
-.BorderDesignsTopBottom{
+.BorderDesignsTopBottom {
     margin-left: 5px;
     border-left: 2px solid #5FDCCD;
     border-right: 2px solid #5FDCCD;
@@ -325,7 +322,7 @@ h1 {
     z-index: 10002;
     text-align: center;
     background-color: black;
-    margin:20px;
+    margin: 20px;
     line-height: 80px;
     width: 400px;
     color: yellow;
@@ -353,11 +350,11 @@ h1 {
     font-size: 40px;
 }
 
-.ScreenBorder{
-    width:466px;
+.ScreenBorder {
+    width: 466px;
 }
 
-.PilotNameArea{
+.PilotNameArea {
     border-top: solid 3px #5FDCCD;
     border-left: solid 3px #5FDCCD;
     font-size: 150px;
@@ -365,48 +362,55 @@ h1 {
     width: 150px;
     z-index: 5;
     text-align: center;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
     position: absolute;
     right: 0px;
     bottom: 0px;
 }
 
-.PilotName{
+.PilotName {
     opacity: 1;
-    color:white;
+    color: white;
 }
 
-.Pilot{
+.Pilot {
     z-index: -1;
     padding-left: 4px;
     background-color: black;
 }
 
 .PilotPortraitSquareArea {
-    width: 300px;
-    height: 300px;
+    width: 306px;
+    height: 305px;
     overflow: hidden;
-    background-color: #151515 ;
-    position:relative;
-    border: solid 2px #5FDCCD;
+    background-color: #151515;
+    position: relative;
+    border: solid 1px #5FDCCD;
+    border-right: 0px;
+    border-top: 0px;
     cursor: pointer;
 }
 
-.PilotPortraitSquare{
-    height: auto;
-    width: 100%;
+.PilotPortraitSquare {
+    border: 1px solid #5FDCCD;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    margin-top: 0px;
+    height: 300px;
+    width: 300px;
     position: absolute;
     bottom: 0;
 }
 
-.RequestBackground{
+.RequestBackground {
     width: 300px;
 }
 
-.SquadPilotName{
-    width:100px;
+.SquadPilotName {
+    width: 100px;
     padding-top: 5px;
-    line-height:90px;
+    line-height: 90px;
     background-color: black;
     font-size: 100px;
     text-align: center;
@@ -415,9 +419,8 @@ h1 {
     display: inline-block;
 }
 
-
-.SquadCallSign{
-    width:196px;
+.SquadCallSign {
+    width: 202px;
     line-height: 90px;
     padding-top: 5px;
     background-color: #5FDCCD;
@@ -428,54 +431,63 @@ h1 {
     color: black;
 }
 
-.SquadPilotTitle{
+.SquadPilotTitle {
     border: solid 2px #5FDCCD;
-    width: 300px;
+    width: 306px;
     height: 98px;
     margin-left: 4px;
 }
 
-.HeartMonitorName, .BrainWaveMonitorName, .StressMonitorName, .TemperatureMonitorName{
-    width:100px;
+.HeartMonitorName,
+.BrainWaveMonitorName,
+.StressMonitorName,
+.TemperatureMonitorName {
+    width: 100px;
     line-height: 96px;
     text-align: center;
     font-size: 90px;
     font-family: 'Halenstb';
-    color:#5FDCCD;
+    color: #5FDCCD;
     display: inline-block;
     float: left;
     border-right: 1px solid #2b2b2b
 }
 
-
-
-.HeartMonitorChart, .BrainWaveMonitorChart, .StressMonitorChart, .TemperatureMonitorChart{
+.HeartMonitorChart,
+.BrainWaveMonitorChart,
+.StressMonitorChart,
+.TemperatureMonitorChart {
     height: 95px;
     width: 200px;
     background-color: black;
 }
 
-.HeartMonitor, .BrainWaveMonitor, .StressMonitor, .TemperatureMonitor{
-    height:100px;
+.HeartMonitor,
+.BrainWaveMonitor,
+.StressMonitor,
+.TemperatureMonitor {
+    height: 100.75px;
     width: 304px;
-    border: 2px solid #2b2b2b;
+    border: 1px solid #5FDCCD;
 }
 
-.BrainWaveMonitor, .StressMonitor, .TemperatureMonitor{
+.BrainWaveMonitor,
+.StressMonitor,
+.TemperatureMonitor {
     border-top: 0px;
 }
 
-.MonitorBoard{
+.MonitorBoard {
     display: inline-block;
     position: absolute;
 }
 
-.PilotBoard{
+.PilotBoard {
     display: inline-block;
     border-bottom: 2px solid black;
 }
 
-.TemperatureMonitorChart{
+.TemperatureMonitorChart {
     line-height: 90px;
     padding-top: 5px;
     background-color: black;
@@ -484,6 +496,51 @@ h1 {
     font-size: 90px;
     font-family: 'Halenstb';
     color: #5FDCCD;
+}
+
+.SinglePilotDashboard {
+    width: 600px;
+    margin-right: 0px;
+}
+
+.SquadOfPilots {}
+
+.FirstColumn {
+    display: inline-block;
+    float: left;
+    position: absolute;
+}
+
+.SecondColumn {
+    display: inline-block;
+    position: absolute;
+    float: right;
+}
+
+.SinglePilotDashboard{
+    margin: 0px;
+    width: 100%;
+}
+
+.flex-container-squad {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1240px;
+    height: 800px;
+    background-color: black;
+}
+
+.flex-item-pilot {
+    background-color: black;
+    width: 600px;
+    height: 400px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.flex-item-pilot: nth-child(2) {
+    order: 2;
 }
 
 @font-face {
@@ -496,4 +553,3 @@ h1 {
     url('../fonts/Halenstb.svg#Halenstb') format('svg');
     /* Legacy iOS */
 }
-

@@ -1,44 +1,14 @@
-<div class="SinglePilotDashboard">
-    <div class="PilotBoard" ng-click='about.togglePlay()'>
-        <div class="SquadPilotTitle">
-            <div class='SquadPilotName'>イ</div>
-            <div class="SquadCallSign">005</div>
-        </div>
-        <div class="Pilot">
-            <div class="PilotPortraitSquareArea">
-                <img class="PilotPortraitSquare" src='../images/samara-knights-of-sidonia-square.png' />
-                <div class='SquadWarningContainer' id='warning'>
-                    <div class='SquadWarningMessage'>緊急要請</div>
-                    <img class='RequestBackground' src='../images/EmergencyRequest.png' />
-                </div>
-                <div class="SquadPilotAudioStatus">
-                    <div class="SquadMicrophoneStatus">
-                        <img class="notspeaking;MicroPhoneImg" id="micStatus" src="../images/sidoniaSpeak.png" />
-                    </div>
-                    <div class="SquadVolumeBarArea">
-                        <div id="volumeBars"></div>
-                    </div>
-                </div>
-                <audio id="audioSong" src="audio/crowSong.mp3"></audio>
-            </div>
-        </div>
+<div class='flex-container-squad'>
+    <div class='flex-item-pilot'>
+        <squad-pilot pilot-name='イ' callsign='005' warning-message='緊急要請' audio-src='audio/crowSong.mp3' temperature='36.6' pilot-image='../images/samara-knights-of-sidonia-square.png'></squad-pilot>
     </div>
-    <div class="MonitorBoard">
-        <div class="HeartMonitor">
-            <div class='HeartMonitorName'>心</div>
-            <canvas id='HeartMonitorCanvas' class='HeartMonitorChart'></canvas>
-        </div>
-        <div class="StressMonitor">
-            <div class='StressMonitorName'>圧</div>
-            <canvas id='StressMonitorCanvas' class='StressMonitorChart'></canvas>
-        </div>
-        <div class="TemperatureMonitor">
-            <div class='TemperatureMonitorName'>温</div>
-            <div class='TemperatureMonitorChart'>36.6</div>
-        </div>
-        <div class="BrainWaveMonitor">
-            <div class='BrainWaveMonitorName'>脳</div>
-            <canvas id='BrainWaveMonitorCanvas' class='BrainWaveMonitorChart'></canvas>
-        </div>
+    <div class='flex-item-pilot'>
+        <squad-pilot class='flex-item-pilot' pilot-name='イ' callsign='269' warning-message='緊急要請' audio-src='audio/crowSong.mp3' temperature='36.6' pilot-image='../images/samara-knights-of-sidonia-square.png'></squad-pilot>
+    </div>
+    <div class='flex-item-pilot'>
+        <squad-pilot class='flex-item-pilot' pilot-name='羊' callsign='657' warning-message='緊急要請' audio-src='audio/crowSong.mp3' temperature='36.6' pilot-image='../images/samara-knights-of-sidonia-square.png'></squad-pilot>
+    </div>
+    <div class='flex-item-pilot'>
+        <squad-pilot class='flex-item-pilot' pilot-name='イ' callsign='488' warning-message='緊急要請' audio-src='audio/crowSong.mp3' temperature='36.6' pilot-image='../images/samara-knights-of-sidonia-square.png'></squad-pilot>
     </div>
 </div>
