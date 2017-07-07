@@ -1,14 +1,36 @@
-<div class='flex-container-squad'>
-    <div class='flex-item-pilot'>
-        <squad-pilot pilot-name='イ' callsign='005' warning-message='緊急要請' audio-src='audio/crowSong.mp3' temperature='36.6' pilot-image='../images/samara-knights-of-sidonia-square.png'></squad-pilot>
+<div class="ScreenBorder">
+    <div class="BorderDesignsTopBottom"></div>
+    <div class="BorderDesignsLeft"></div>
+    <div class="PilotCard" ng-click="main.togglePlay()">
+        <div class="PilotPortraitArea">
+            <div class='warningContainer' id='warning'>
+                <div class='warningMessage'>
+                    緊急要請
+                </div>
+                <img src='../images/EmergencyRequest.png' />
+            </div>
+            <div class="PilotNameArea">
+                <div class="PilotName">イ</div>
+            </div>
+            <img class="PilotPortrait" src='../images/samara-knights-of-sidonia.png' />
+        </div>
+        <audio id="audioSong" src="audio/crowSong.mp3"></audio>
+        <div class="PilotAudioStatus" id="r2" style="bottom:0px">
+            <div class="MicrophoneStatus">
+                <img class="notspeaking" id="micStatus" src="../images/sidoniaSpeak.png" />
+            </div>
+            <div class="volumeBarArea" style="float:left">
+                <div id="volumeBars"></div>
+            </div>
+            <div class="CallSignArea" style="float:left">
+                <label class="CallSignText">005</label>
+            </div>
+        </div>
     </div>
-    <div class='flex-item-pilot'>
-        <squad-pilot class='flex-item-pilot' pilot-name='イ' callsign='269' warning-message='緊急要請' audio-src='audio/crowSong.mp3' temperature='36.6' pilot-image='../images/samara-knights-of-sidonia-square.png'></squad-pilot>
-    </div>
-    <div class='flex-item-pilot'>
-        <squad-pilot class='flex-item-pilot' pilot-name='羊' callsign='657' warning-message='緊急要請' audio-src='audio/crowSong.mp3' temperature='36.6' pilot-image='../images/samara-knights-of-sidonia-square.png'></squad-pilot>
-    </div>
-    <div class='flex-item-pilot'>
-        <squad-pilot class='flex-item-pilot' pilot-name='イ' callsign='488' warning-message='緊急要請' audio-src='audio/crowSong.mp3' temperature='36.6' pilot-image='../images/samara-knights-of-sidonia-square.png'></squad-pilot>
-    </div>
+    <div class="BorderDesignsRight"></div>
+    <div class="BorderDesignsTopBottom"></div>
 </div>
+
+
+<pilot callsign="005" warning-message="緊急要請" audio-src="audio/crowSong.mp3" pilot-name='イ' pilot-image='images/samara-knights-of-sidonia.png'></pilot>
+<pilot callsign="006" warning-message="緊急要請" audio-src="audio/crowSong.mp3" pilot-name='イ' pilot-image='images/samara-knights-of-sidonia.png'></pilot>

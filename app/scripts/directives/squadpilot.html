@@ -6,7 +6,7 @@
         </div>
         <div class="Pilot">
             <div class="PilotPortraitSquareArea">
-                <img class="PilotPortraitSquare" src='../images/samara-knights-of-sidonia-square.png' />
+                <img class="PilotPortraitSquare" src='{{pilotImage}}' />
                 <div class='SquadWarningContainer' id='warning'>
                     <div class='SquadWarningMessage'>{{warningMessage}}</div>
                     <img class='RequestBackground' src='../images/EmergencyRequest.png' />
@@ -34,7 +34,7 @@
         </div>
         <div class="TemperatureMonitor">
             <div class='TemperatureMonitorName'>温</div>
-            <div class='TemperatureMonitorChart'>{{temperature}}</div>
+            <div ng-class="{'TemperatureWarning': temperature >= 37.2 && temperature <= 38.0, 'TemperatureCritical': temperature > 38.0}" class='TemperatureMonitorChart' >{{temperature}}</div>
         </div>
         <div class="BrainWaveMonitor">
             <div class='BrainWaveMonitorName'>脳</div>

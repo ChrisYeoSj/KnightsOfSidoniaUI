@@ -58,13 +58,15 @@ angular.module('kosApp')
                     var frequencyData = new Uint8Array(analyser.frequencyBinCount);
 
                     var canvasBrainAngularElement = element.find('#BrainWaveMonitorCanvas');
+                    var canvasBrain;
                     if (canvasBrainAngularElement.length > 0){
-                        var canvasBrain = canvasBrainAngularElement[0];
+                        canvasBrain = canvasBrainAngularElement[0];
                     }
 
                     var canvasStressAngularElement = element.find('#StressMonitorCanvas');
+                    var canvasStress; 
                     if (canvasStressAngularElement.length > 0){
-                        var canvasStress = canvasStressAngularElement[0];
+                       canvasStress = canvasStressAngularElement[0];
                     }
 
                     //var canvasBrain = document.getElementById("BrainWaveMonitorCanvas");
@@ -85,8 +87,9 @@ angular.module('kosApp')
                     //var canvas = document.getElementById('HeartMonitorCanvas');
 
                     var canvasHeartAngularElement = element.find('#HeartMonitorCanvas');
+                    var canvas;
                     if (canvasHeartAngularElement.length > 0){
-                        var canvas = canvasHeartAngularElement[0];
+                        canvas = canvasHeartAngularElement[0];
                     }
 
                     var context = canvas.getContext('2d'),

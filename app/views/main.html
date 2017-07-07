@@ -1,36 +1,22 @@
-<div class="ScreenBorder">
-    <div class="BorderDesignsTopBottom"></div>
-    <div class="BorderDesignsLeft"></div>
-    <div class="PilotCard" ng-click="main.togglePlay()">
-        <div class="PilotPortraitArea">
-            <div class='warningContainer' id='warning'>
-                <div class='warningMessage'>
-                    緊急要請
-                </div>
-                <img src='../images/EmergencyRequest.png' />
-            </div>
-            <div class="PilotNameArea">
-                <div class="PilotName">イ</div>
-            </div>
-            <img class="PilotPortrait" src='../images/samara-knights-of-sidonia.png' />
-        </div>
-        <audio id="audioSong" src="audio/crowSong.mp3"></audio>
-        <div class="PilotAudioStatus" id="r2" style="bottom:0px">
-            <div class="MicrophoneStatus">
-                <img class="notspeaking" id="micStatus" src="../images/sidoniaSpeak.png" />
-            </div>
-            <div class="volumeBarArea" style="float:left">
-                <div id="volumeBars"></div>
-            </div>
-            <div class="CallSignArea" style="float:left">
-                <label class="CallSignText">005</label>
-            </div>
-        </div>
-    </div>
-    <div class="BorderDesignsRight"></div>
-    <div class="BorderDesignsTopBottom"></div>
+<div class="SquadTitle">
+待機第五班
 </div>
 
+<div class='flex-container-squad'>
+    <div class='flex-item-pilot'>
+        <squad-pilot pilot-name='{{main.firstPilotName}}' callsign='{{main.firstPilotCallsign}}' warning-message='緊急要請' audio-src='{{main.firstPilotAudioStream}}' temperature='{{main.firstPilotTemp}}' pilot-image='{{main.firstPilotImage}}'></squad-pilot>
+    </div>
+    <div class='flex-item-pilot'>
+        <squad-pilot class='flex-item-pilot' pilot-name='{{main.secondPilotName}}' callsign='{{main.secondPilotCallsign}}' warning-message='緊急要請' audio-src='{{main.secondPilotAudioStream}}' temperature='{{main.secondPilotTemp}}' pilot-image='{{main.secondPilotImage}}'></squad-pilot>
+    </div>
+    <div class='flex-item-pilot'>
+        <squad-pilot class='flex-item-pilot' pilot-name='{{main.thirdPilotName}}' callsign='{{main.thirdPilotCallsign}}' warning-message='緊急要請' audio-src='{{main.thirdPilotAudioStream}}' temperature='{{main.thirdPilotTemp}}' pilot-image='{{main.thirdPilotImage}}'></squad-pilot>
+    </div>
+    <div class='flex-item-pilot'>
+        <squad-pilot class='flex-item-pilot' pilot-name='{{main.fourthPilotName}}' callsign='{{main.fourthPilotCallsign}}' warning-message='緊急要請' audio-src='{{main.fourthPilotAudioStream}}' temperature='{{main.fourthPilotTemp}}' pilot-image='{{main.fourthPilotImage}}'></squad-pilot>
+    </div>
+</div>
 
-<pilot callsign="005" warning-message="緊急要請" audio-src="audio/crowSong.mp3" pilot-name='イ' pilot-image='images/samara-knights-of-sidonia.png'></pilot>
-<pilot callsign="006" warning-message="緊急要請" audio-src="audio/crowSong.mp3" pilot-name='イ' pilot-image='images/samara-knights-of-sidonia.png'></pilot>
+<div class="sidonia-logo">
+    <img src="../images/Sidonia_no_Kishi_anime_logo.png"></img>
+</div>
