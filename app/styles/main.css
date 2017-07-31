@@ -1,14 +1,21 @@
 .browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
 
 body {
-    padding: 0;
-    background: #050D0D;
+  padding: 0;
+  background: #050D0D;
 }
+
+
+
+
+
+
+
 
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -16,572 +23,696 @@ body {
 .header,
 .marketing,
 .footer {
-    padding-left: 15px;
-    padding-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
+
+
+
+
+
+
+
 
 
 /* Custom page header */
 
 .header {
-    border-bottom: 1px solid black;
-    margin-bottom: 10px;
-    background-color: black;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+  background-color: black;
 }
+
+
+
+
+
+
+
 
 
 /* Make the masthead heading the same height as the navigation */
 
 .header h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
 }
+
+
+
+
+
+
+
 
 
 /* Custom page footer */
 
 .footer {
-    padding-top: 19px;
-    color: #777;
-    border-top: 1px solid black;
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid black;
 }
 
-.container-narrow > hr {
-    margin: 30px 0;
+.container-narrow>hr {
+  margin: 30px 0;
 }
+
+
+
+
+
+
+
 
 
 /* Main marketing message and sign up button */
 
 .jumbotron {
-    text-align: center;
-    border-bottom: 1px solid #e5e5e5;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .jumbotron .btn {
-    font-size: 21px;
-    padding: 14px 24px;
+  font-size: 21px;
+  padding: 14px 24px;
 }
+
+
+
+
+
+
+
 
 
 /* Supporting marketing content */
 
 .marketing {
-    margin: 40px 0;
+  margin: 40px 0;
 }
 
-.marketing p + h4 {
-    margin-top: 28px;
+.marketing p+h4 {
+  margin-top: 28px;
 }
+
+
+
+
+
+
+
 
 
 /* Responsive: Portrait tablets and up */
 
 @media screen and (min-width: 768px) {
-    .container {
-        max-width: 100%;
-    }
-    /* Remove the padding we set earlier */
-    .header,
-    .marketing,
-    .footer {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    /* Space out the masthead */
-    .header {
-        margin-bottom: 30px;
-    }
-    /* Remove the bottom border on the jumbotron for visual effect */
-    .jumbotron {
-        border-bottom: 0;
-    }
+  .container {
+    max-width: 100%;
+  }
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
 }
 
 body {
-    font-family: 'Open Sans', serif;
-    font-size: 100%
+  font-family: 'Open Sans', serif;
+  font-size: 100%
 }
 
 .contentWrapper {
-    width: 800px;
-    margin: auto;
-    font-size: 22px;
-    font-weight: 200
+  width: 800px;
+  margin: auto;
+  font-size: 22px;
+  font-weight: 200
 }
 
 h1 {
-    font-size: 60px;
-    font-weight: 300
+  font-size: 60px;
+  font-weight: 300
 }
 
 .firstVolSpeak {
-    background-color: #0a2a2d;
-    -webkit-transition: .1s ease all
+  background-color: #0a2a2d;
+  -webkit-transition: .1s ease all
 }
 
 .secondVolSpeak {
-    background-color: #0e393d;
-    -webkit-transition: .1s ease all
+  background-color: #0e393d;
+  -webkit-transition: .1s ease all
 }
 
 .thirdVolSpeak {
-    background-color: #114649;
-    -webkit-transition: .1s ease all
+  background-color: #114649;
+  -webkit-transition: .1s ease all
 }
 
 .fourthVolSpeak {
-    background-color: #155c63;
-    -webkit-transition: .1s ease all
+  background-color: #155c63;
+  -webkit-transition: .1s ease all
 }
 
 .fifthVolSpeak {
-    background-color: #1c7177;
-    -webkit-transition: .1s ease all
+  background-color: #1c7177;
+  -webkit-transition: .1s ease all
 }
 
 .sixthVolSpeak {
-    background-color: #247b82;
-    -webkit-transition: .1s ease all
+  background-color: #247b82;
+  -webkit-transition: .1s ease all
 }
 
 .seventhVolSpeak {
-    background-color: #30878e;
-    -webkit-transition: .1s ease all
+  background-color: #30878e;
+  -webkit-transition: .1s ease all
 }
 
 .eighthVolSpeak {
-    background-color: #378f96;
-    -webkit-transition: .1s ease all
+  background-color: #378f96;
+  -webkit-transition: .1s ease all
 }
 
 .ninthVolSpeak {
-    background-color: #40aab2;
-    -webkit-transition: .1s ease all
+  background-color: #40aab2;
+  -webkit-transition: .1s ease all
 }
 
 .notspeaking {
-    background-color: #5EDCCC;
-    -webkit-transition: .1s ease all
+  background-color: #5EDCCC;
+  -webkit-transition: .1s ease all
 }
 
 .volumeBarArea {
-    position: relative;
-    width: 150px;
-    height: 100px;
-    background: rgba(10, 24, 24, 1);
-    border-left: solid 1px #5FDCCD;
+  position: relative;
+  width: 150px;
+  height: 100px;
+  background: rgba(10, 24, 24, 1);
+  border-left: solid 1px #5FDCCD;
 }
 
 .SquadVolumeBarArea {
-    position: relative;
-    width: 100px;
-    height: 70px;
-    background: rgba(10, 24, 24, 1);
-    border-right: solid 3px black;
-    border-top: solid 3px black;
-    border-bottom: solid 3px black;
-    display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 70px;
+  background: rgba(10, 24, 24, 1);
+  border-right: solid 3px black;
+  border-top: solid 3px black;
+  border-bottom: solid 3px black;
+  display: inline-block;
 }
 
 .volBar {
-    position: absolute;
-    background: #0a2a2d;
-    -webkit-transition: .1s ease all;
+  position: absolute;
+  background: #0a2a2d;
+  -webkit-transition: .1s ease all;
 }
 
 .volBarSpeaking {
-    background-color: #67CED4;
-    -webkit-transition: .1s ease all;
+  background-color: #67CED4;
+  -webkit-transition: .1s ease all;
 }
 
 .volBarNotSpeaking {
-    background-color: #0a2a2d;
-    -webkit-transition: .1s ease all;
+  background-color: #0a2a2d;
+  -webkit-transition: .1s ease all;
 }
 
 .experiment {
-    position: relative;
-    z-index: 10000;
+  position: relative;
+  z-index: 10000;
 }
 
 .MicrophoneStatus {
-    float: left;
-    padding: 5px;
-    background-color: black;
+  float: left;
+  padding: 5px;
+  background-color: black;
 }
 
 .SquadMicrophoneStatus {
-    width: 100px;
-    height: 70px;
-    float: left;
-    background-color: black;
-    border-style: solid;
-    border-width: 3.33px;
-    border-color: black;
+  width: 100px;
+  height: 70px;
+  float: left;
+  background-color: black;
+  border-style: solid;
+  border-width: 3.33px;
+  border-color: black;
 }
 
 .MicroPhoneImg {
-    width: 100px;
-    height: 70px;
+  width: 100px;
+  height: 70px;
 }
 
 .CallSignArea {
-    position: relative;
-    background: #5FDCCD;
-    width: 150px;
-    height: 100px;
+  position: relative;
+  background: #5FDCCD;
+  width: 150px;
+  height: 100px;
 }
 
 .CallSignText {
-    padding-top: 5px;
-    padding-left: 10px;
-    font-size: 80px;
-    font-family: 'Halenstb';
-    line-height: 95px;
-    width: 150px;
-    text-align: center;
+  padding-top: 5px;
+  padding-left: 10px;
+  font-size: 80px;
+  font-family: 'Halenstb';
+  line-height: 95px;
+  width: 150px;
+  text-align: center;
 }
 
 .PilotPortrait {
-    border-style: solid;
-    border-width: 5px;
-    border-color: #5FDCCD;
-    padding: 2px;
-    width: 440px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #5FDCCD;
+  padding: 2px;
+  width: 440px;
 }
 
 .PilotPortraitArea {
-    width: 450px;
-    padding: 5px;
-    background-color: #151515;
-    position: relative;
+  width: 450px;
+  padding: 5px;
+  background-color: #151515;
+  position: relative;
 }
 
 .PilotCard {
-    border-style: solid;
-    border-width: 3px;
-    border-color: #5FDCCD;
-    width: 456px;
-    display: inline-block;
-    cursor: pointer;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #5FDCCD;
+  width: 456px;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .PilotAudioStatus {
-    border-top: 3px solid #5FDCCD;
-    height: 100px;
+  border-top: 3px solid #5FDCCD;
+  height: 100px;
 }
 
 .SquadPilotAudioStatus {
-    height: 72px;
-    bottom: 0px;
-    position: absolute;
-    left: 0px;
-    border: 2px solid #5FDCCD;
-    border-bottom: 0px;
+  height: 72px;
+  bottom: 0px;
+  position: absolute;
+  left: 0px;
+  border: 2px solid #5FDCCD;
+  border-bottom: 0px;
 }
 
 .BorderDesignsLeft {
-    display: inline-block;
-    border-top: 2px solid #5FDCCD;
-    border-bottom: 2px solid #5FDCCD;
-    height: 616px;
-    width: 5px;
-    float: left;
+  display: inline-block;
+  border-top: 2px solid #5FDCCD;
+  border-bottom: 2px solid #5FDCCD;
+  height: 616px;
+  width: 5px;
+  float: left;
 }
 
 .BorderDesignsRight {
-    display: inline;
-    border-top: 2px solid #5FDCCD;
-    border-bottom: 2px solid #5FDCCD;
-    height: 616px;
-    width: 5px;
-    float: right;
+  display: inline;
+  border-top: 2px solid #5FDCCD;
+  border-bottom: 2px solid #5FDCCD;
+  height: 616px;
+  width: 5px;
+  float: right;
 }
 
 .BorderDesignsTopBottom {
-    margin-left: 5px;
-    border-left: 2px solid #5FDCCD;
-    border-right: 2px solid #5FDCCD;
-    height: 5px;
-    width: 456px;
-    position: relative;
+  margin-left: 5px;
+  border-left: 2px solid #5FDCCD;
+  border-right: 2px solid #5FDCCD;
+  height: 5px;
+  width: 456px;
+  position: relative;
 }
 
 .warningContainer {
-    overflow: hidden;
-    width: 440px;
-    height: 120px;
-    background-color: yellow;
-    z-index: 10001;
-    position: absolute;
+  overflow: hidden;
+  width: 440px;
+  height: 120px;
+  background-color: yellow;
+  z-index: 10001;
+  position: absolute;
 }
 
 .warningMessage {
-    position: absolute;
-    z-index: 10002;
-    text-align: center;
-    background-color: black;
-    margin: 20px;
-    line-height: 80px;
-    width: 400px;
-    color: yellow;
-    font-size: 60px;
+  position: absolute;
+  z-index: 10002;
+  text-align: center;
+  background-color: black;
+  margin: 20px;
+  line-height: 80px;
+  width: 400px;
+  color: yellow;
+  font-size: 60px;
 }
 
 .SquadWarningContainer {
-    overflow: hidden;
-    width: 307px;
-    height: 80px;
-    background-color: yellow;
-    z-index: 10001;
-    position: absolute;
+  overflow: hidden;
+  width: 307px;
+  height: 80px;
+  background-color: yellow;
+  z-index: 10001;
+  position: absolute;
 }
 
 .SquadWarningMessage {
-    position: absolute;
-    z-index: 10002;
-    text-align: center;
-    background-color: black;
-    margin: 10px;
-    line-height: 60px;
-    width: 287px;
-    color: yellow;
-    font-size: 40px;
+  position: absolute;
+  z-index: 10002;
+  text-align: center;
+  background-color: black;
+  margin: 10px;
+  line-height: 60px;
+  width: 287px;
+  color: yellow;
+  font-size: 40px;
 }
 
 .ScreenBorder {
-    width: 466px;
+  width: 466px;
 }
 
 .PilotNameArea {
-    border-top: solid 3px #5FDCCD;
-    border-left: solid 3px #5FDCCD;
-    font-size: 150px;
-    line-height: 150px;
-    width: 150px;
-    z-index: 5;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.8);
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
+  border-top: solid 3px #5FDCCD;
+  border-left: solid 3px #5FDCCD;
+  font-size: 150px;
+  line-height: 150px;
+  width: 150px;
+  z-index: 5;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
 }
 
 .PilotName {
-    opacity: 1;
-    color: white;
+  opacity: 1;
+  color: white;
 }
 
 .Pilot {
-    z-index: -1;
-    padding-left: 4px;
-    background-color: black;
+  z-index: -1;
+  padding-left: 4px;
+  background-color: black;
 }
 
 .PilotPortraitSquareArea {
-    width: 307px;
-    height: 305px;
-    overflow: hidden;
-    background-color: #151515;
-    position: relative;
-    border: solid 1px #5FDCCD;
-    border-right: 0px;
-    border-top: 0px;
-    cursor: pointer;
+  width: 307px;
+  height: 305px;
+  overflow: hidden;
+  background-color: #151515;
+  position: relative;
+  border: solid 1px #5FDCCD;
+  border-right: 0px;
+  border-top: 0px;
+  cursor: pointer;
 }
 
 .PilotPortraitSquare {
-    border: 1px solid #5FDCCD;
-    margin-left: 3px;
-    margin-right: 3px;
-    margin-bottom: 2px;
-    margin-top: 0px;
-    height: 300px;
-    width: 300px;
-    position: absolute;
-    bottom: 0;
+  border: 1px solid #5FDCCD;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-bottom: 2px;
+  margin-top: 0px;
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  bottom: 0;
 }
 
 .RequestBackground {
-    width: 307px;
+  width: 307px;
 }
 
 .SquadPilotName {
-    width: 100px;
-    padding-top: 5px;
-    line-height: 90px;
-    background-color: black;
-    font-size: 100px;
-    text-align: center;
-    color: white;
-    float: left;
-    display: inline-block;
+  width: 100px;
+  padding-top: 5px;
+  line-height: 90px;
+  background-color: black;
+  font-size: 100px;
+  text-align: center;
+  color: white;
+  float: left;
+  display: inline-block;
 }
 
 .SquadCallSign {
-    width: 202px;
-    line-height: 90px;
-    padding-top: 5px;
-    background-color: #5FDCCD;
-    text-align: right;
-    display: inline-block;
-    font-size: 90px;
-    font-family: 'Halenstb';
-    color: black;
+  width: 202px;
+  line-height: 90px;
+  padding-top: 5px;
+  background-color: #5FDCCD;
+  text-align: right;
+  display: inline-block;
+  font-size: 90px;
+  font-family: 'Halenstb';
+  color: black;
 }
 
 .SquadPilotTitle {
-    border: solid 2px #5FDCCD;
-    width: 306px;
-    height: 98px;
-    margin-left: 4px;
+  border: solid 2px #5FDCCD;
+  width: 306px;
+  height: 98px;
+  margin-left: 4px;
 }
 
 .HeartMonitorName,
 .BrainWaveMonitorName,
 .StressMonitorName,
 .TemperatureMonitorName {
-    width: 100px;
-    line-height: 96px;
-    text-align: center;
-    font-size: 90px;
-    font-family: 'Halenstb';
-    color: #5FDCCD ;
-    display: inline-block;
-    float: left;
-    border-right: 1px solid #2b2b2b
+  width: 100px;
+  line-height: 96px;
+  text-align: center;
+  font-size: 90px;
+  font-family: 'Halenstb';
+  color: #5FDCCD;
+  display: inline-block;
+  float: left;
+  border-right: 1px solid #2b2b2b
 }
 
 .HeartMonitorChart,
 .BrainWaveMonitorChart,
 .StressMonitorChart,
 .TemperatureMonitorChart {
-    height: 95px;
-    width: 200px;
-    background-color: black;
+  height: 95px;
+  width: 200px;
+  background-color: black;
 }
 
-.TemperatureWarning{
-    color: yellow !important;
+.TemperatureWarning {
+  color: yellow !important;
 }
 
-.TemperatureCritical{
-    color:red !important;
+.TemperatureCritical {
+  color: red !important;
 }
 
-.TemperatureRegular{
-    color: #5FDCCD;
+.TemperatureRegular {
+  color: #5FDCCD;
 }
 
 .HeartMonitor,
 .BrainWaveMonitor,
 .StressMonitor,
 .TemperatureMonitor {
-    height: 100.75px;
-    width: 304px;
-    border: 1px solid #5FDCCD;
+  height: 100.75px;
+  width: 304px;
+  border: 1px solid #5FDCCD;
 }
 
 .BrainWaveMonitor,
 .StressMonitor,
 .TemperatureMonitor {
-    border-top: 0px;
+  border-top: 0px;
 }
 
 .MonitorBoard {
-    display: inline-block;
-    position: absolute;
+  display: inline-block;
+  position: absolute;
 }
 
 .PilotBoard {
-    display: inline-block;
-    border-bottom: 2px solid black;
+  display: inline-block;
+  border-bottom: 2px solid black;
 }
 
 .TemperatureMonitorChart {
-    line-height: 90px;
-    padding-top: 5px;
-    background-color: black;
-    text-align: right;
-    display: inline-block;
-    font-size: 90px;
-    font-family: 'Halenstb';
-    color: #5FDCCD;
+  line-height: 90px;
+  padding-top: 5px;
+  background-color: black;
+  text-align: right;
+  display: inline-block;
+  font-size: 90px;
+  font-family: 'Halenstb';
+  color: #5FDCCD;
 }
 
 .SinglePilotDashboard {
-    width: 600px;
-    margin-right: 0px;
+  width: 600px;
+  margin-right: 0px;
 }
 
 .SquadOfPilots {}
 
 .FirstColumn {
-    display: inline-block;
-    float: left;
-    position: absolute;
+  display: inline-block;
+  float: left;
+  position: absolute;
 }
 
 .SecondColumn {
-    display: inline-block;
-    position: absolute;
-    float: right;
+  display: inline-block;
+  position: absolute;
+  float: right;
 }
 
-.SinglePilotDashboard{
-    margin: 0px;
-    width: 100%;
+.SinglePilotDashboard {
+  margin: 0px;
+  width: 100%;
 }
 
 .flex-container-squad {
-    display: -webkit-flex;
-    display: flex;
-    flex-wrap: wrap;
-    width: 1230px;
-    height: 800px;
-    background-color: black;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1230px;
+  height: 800px;
+  background-color: black;
 }
 
 .flex-item-pilot {
-    background-color: black;
-    width: 600px;
-    height: 400px;
-    margin-right: 14px;
-    margin-bottom: 6px;
+  background-color: black;
+  width: 600px;
+  height: 400px;
+  margin-right: 14px;
+  margin-bottom: 6px;
 }
 
 .flex-item-pilot: nth-child(2) {
-    order: 2;
+  order: 2;
 }
 
-.SquadTitle{
-    margin-left: 4px;
-    line-height: 100px;
-    font-size: 80px;
-    width: 1226px;
-    height: 100px;
-    background-color: #5FDCCD;
-    color: black;
-    font-family: 'Halenstb';
-    margin-bottom: 15px;
+.SquadTitle {
+  margin-left: 4px;
+  line-height: 100px;
+  font-size: 80px;
+  width: 1226px;
+  height: 100px;
+  background-color: #5FDCCD;
+  color: black;
+  font-family: 'Halenstb';
+  margin-bottom: 15px;
 }
 
-.sidonia-logo{
-    display: inline-block;
-    position: absolute;
-    margin-top: 50px;
+.sidonia-logo {
+  display: inline-block;
+  position: absolute;
+  margin-top: 50px;
 }
 
 @font-face {
-    font-family: 'Halenstb';
-    src: url('../fonts/Halenstb.eot');
-    /* IE9 Compat Modes */
-    src: url('../fonts/Halenstb.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/Halenstb.woff') format('woff'), /* Pretty Modern Browsers */
-    url('../fonts/Halenstb.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('../fonts/Halenstb.svg#Halenstb') format('svg');
-    /* Legacy iOS */
+  font-family: 'Halenstb';
+  src: url('../fonts/Halenstb.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/Halenstb.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/Halenstb.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../fonts/Halenstb.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/Halenstb.svg#Halenstb') format('svg');
+  /* Legacy iOS */
+}
+
+.rollbox-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rollbox {
+  width: 1px;
+  height: 1px;
+  color: white;
+  position: relative;
+  background-color: black;
+  border: 1px solid white;
+  transition: width 0.5s,
+  height 0.3s 0.5s;
+}
+
+.appear {
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  
+  transition: visibility 0.1s linear,
+  opacity 0.1s linear;
+}
+
+.rollbox:hover {
+  width: 1230px;
+  height: 810px;
+}
+
+.rollbox:hover>.appear {
+  visibility: visible;
+  opacity: 1;
+  
+  transition: visibility 0.6s linear,
+  opacity 0.6s linear;
+  transition-delay: 0.6s;
+}
+
+
+.cross {
+  position: absolute;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  background: linear-gradient(to bottom, transparent 35%, #fff 35%, #fff 65%, transparent 65%),
+  linear-gradient(to right, transparent 35%, #fff 35%, #fff 65%, transparent 65%);
+  -webkit-transform: translate(-50%, 0);
+}
+
+.cross-corner {
+  z-index: -1;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: white;
+  background: linear-gradient(to bottom, transparent 35%, #fff 35%, #fff 65%, transparent 65%),
+  linear-gradient(to right, transparent 35%, #fff 35%, #fff 65%, transparent 65%);
+}
+
+.topleft {
+  top: -10px;
+  left: -10px;
+}
+
+.topright {
+  top: -10px;
+  right: -10px;
+}
+
+.bottomleft {
+  bottom: -10px;
+  left: -10px;
+}
+
+.bottomright {
+  bottom: -10px;
+  right: -10px;
 }

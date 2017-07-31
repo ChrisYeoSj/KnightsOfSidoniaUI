@@ -29,6 +29,11 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/animate', {
+        templateUrl: 'views/animate.html',
+        controller: 'AnimateCtrl',
+        controllerAs: 'animate'
+      })
       .otherwise({
         redirectTo: '/'
       });

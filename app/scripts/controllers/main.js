@@ -26,9 +26,9 @@ angular.module('kosApp')
         this.fourthPilotName = "谷";
 
         this.firstPilotImage = "../images/samara-knights-of-sidonia-square.png";
-        this.secondPilotImage = "../images/knights-of-sidonia-ren-square.png";
-        this.thirdPilotImage = "../images/knights-of-sidonia-hoshijiro-square.png";
-        this.fourthPilotImage = "";
+        this.secondPilotImage = "../images/samara-knights-of-sidonia-square.png";
+        this.thirdPilotImage = "../images/samara-knights-of-sidonia-square.png";
+        this.fourthPilotImage = "../images/samara-knights-of-sidonia-square.png";
 
         this.firstPilotAudioStream = "audio/samara-voice-2.mp3";
         this.secondPilotAudioStream = "audio/en-voice.mp3";
